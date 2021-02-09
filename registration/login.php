@@ -5,13 +5,13 @@
   <title>Registration system PHP and MySQL</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body> 
   <div class="header">
   	<h2>Login</h2>
   </div>
 
   <form method="post" action="login.php">
-  	<?php include('/Users/lilianboll/Sites/html/registration/error.php'); ?>
+  	<?php include('error.php'); ?>
   	<div class="input-group">
   		<label>Username</label>
   		<input type="text" name="username" >
