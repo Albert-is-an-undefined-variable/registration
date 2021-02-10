@@ -7,7 +7,7 @@ $email    = "";
 $errors = array();
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'registration');
+$db = mysqli_connect('localhost', 'root', 'welcome123', 'registration');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -20,10 +20,12 @@ if (isset($_POST['reg_user'])) {
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
   if (empty($username)) { array_push($errors, "Username is required"); }
+  else { if (!preg_match('/^[a-zA-Z\s]+$/', $username)){ array_push($errors, "Your user name cannot contain special characters"); }}
   if (empty($email)) { array_push($errors, "Email is required"); }
   if (empty($password_1)) { array_push($errors, "Password is required"); }
+  else { if (strlen($password_1) <= 7 ){ array_push($errors, "Password must have at least 8 characters"); }}
   if ($password_1 != $password_2) {
-	array_push($errors, "The two passwords do not match");
+    array_push($errors, "The two passwords do not match");
   }
 
   // first check the database to make sure
@@ -81,5 +83,13 @@ if (isset($_POST['login_user'])) {
   	}
   }
 }
+// INPUT DATA
+$cells = mysqli_real_escape_string($db, $_POST['cells']);
+$query = "INSERT INTO cells (cells)
+      VALUES('$cells')";
+mysqli_query($db, $query);
+
+
+
 
 ?>
