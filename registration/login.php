@@ -9,6 +9,7 @@
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>98
 </head>
+<<<<<<< HEAD
 <body>
   <div class="menu-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -40,6 +41,12 @@
     </div>
   </nav>
 </div>
+=======
+<body> 
+  <div class="header">
+  	<h2>Login</h2>
+  </div>
+>>>>>>> 9344ce8425ff19be7c69093d1f7fae8c78d1f6fa
 
 <div class="container">
           <div class="hero">

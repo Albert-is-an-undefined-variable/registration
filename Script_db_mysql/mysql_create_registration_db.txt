@@ -1,0 +1,25 @@
+# Create db 'registration'
+CREATE DATABASE registration;
+
+# create 'users' entity
+CREATE TABLE users(
+id       INTEGER       NOT NULL AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(100)  NOT NULL,
+email    VARCHAR(100)  NOT NULL,
+password VARCHAR(100)  NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ;
+
+
+#each time you enter yo mysql from terminal...
+# if you want to know your databases write...
+show databases;
+
+#if you want to go inside a database write....
+use name_of_database;
+
+#then you'll be inside the database if you want to know the tables inside them you write......
+show tables;
+
+#if you want to see the data in one specific column write...
+
+select name_column from name_table;
