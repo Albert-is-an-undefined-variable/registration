@@ -7,7 +7,7 @@ $email    = "";
 $errors = array();
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', 'welcome123', 'registration');
+$db = mysqli_connect('localhost', 'albert', '/Puiyuaru1616', 'tube_manager');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
