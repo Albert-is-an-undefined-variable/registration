@@ -80,9 +80,5 @@ if(isset($_POST['submit'])){
              </form>
 
          </section>
-         <h1>AAAAAAAAAAAAAAAAAAAAAAA</h1>
-         <div class="contact-form__h2">
-             <h2>Wow your  managment is really a mess</h2>
-         </div>
      </body>
  </html>

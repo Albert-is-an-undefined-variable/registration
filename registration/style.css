@@ -28,7 +28,7 @@ body {
 .hero{
     width: 146%;
     height: 100%;
-    background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url("science.jpg");
+    background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url("img/science.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
