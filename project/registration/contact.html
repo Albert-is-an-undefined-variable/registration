@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    	<link rel="stylesheet" type="text/css" href="index.css">
+        <!-- <link rel="stylesheet" type="text/css" href="estilo.css"> -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.php">Tidy tubes</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="">MY PROFILE
+            <span class="caret"></span> </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+            <a class "dropdown-item" href="#">Setings</a> <br>
+            <a class "dropdown-item" href="index.php?logout='1'" style="color: red;">Log Out</a>
+        </div>
+        </li>
+            <li><a href="#services">PROJECTS</a></li>
+            <li><a href="#pricing">REQUESTS</a></li>
+            <li><a href="contact.html">CONTACT US!</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+            <!-- contacto -->
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2 class="text-center">CONTACT</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+            <div class="col-sm-5">
+              <p>Report any problem or bug. We appreciate your feedback!</p>
+              <p><span class="glyphicon glyphicon-map-marker"></span> Barcelona, Spain</p>
+              <p><span class="glyphicon glyphicon-phone"></span> +ring rinnnnggg</p>
+              <p><span class="glyphicon glyphicon-envelope"></span> tidytubes@gmail.com</p>
+            </div>
+            <div class="col-sm-7">
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-default pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+            <!-- Image of location -->
+      <div class="jumbotron text-center" style="margin-bottom: 0px;">
+          <h2>Find us in our second home</h2>
+      </div>
+      <img src="upf.jpg" style="width:100%">
+    </body>
+</html>
